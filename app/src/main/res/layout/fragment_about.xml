@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.about.AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:id="@+id/college_image">
+
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_MNNIT"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginHorizontal="@dimen/text_margin"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/title_size"
+            android:fontFamily="@string/light">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/text_margin">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/label"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginLeft="@dimen/text_margin">
+
+
+            </ImageView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/text_margin"
+               android:layout_marginTop="@dimen/text_margin"
+               android:text="College with zero ragging">
+
+           </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/text_margin">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/label"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginLeft="@dimen/text_margin">
+
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:text="Immence support from seniors">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/text_margin">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/label"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginLeft="@dimen/text_margin">
+
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:text="College with high placement percentage">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/text_margin">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/label"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginLeft="@dimen/text_margin"
+
+                >
+
+
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_margin"
+                android:layout_marginTop="@dimen/text_margin"
+                android:text="Less number of exams as compared to other NITs">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departments"
+            android:layout_marginTop="36dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/title_size"
+            android:fontFamily="@string/bold">
+
+        </TextView>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="36dp"
+            android:foregroundGravity="center"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:id="@+id/viewPager"
+            >
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/text_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Details"
+                android:layout_marginTop="36dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_size"
+                android:fontFamily="@string/bold">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MOTILAL NEHRU NATIONAL INSTITUTE OF TECHNOLOGY(NIT) ALLAHABAD"
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_size"
+
+                android:fontFamily="@string/bold">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prayagraj - 211004, INDIA"
+
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_size"
+                android:fontFamily="@string/bold">
+
+            </TextView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telephone No.: 91-0532-2545404, 2545407 "
+
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_size"
+                android:fontFamily="@string/light">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fax No.: 91-0532-2545341"
+
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_size"
+                android:fontFamily="@string/light">
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: secretary@mnnit.ac.in"
+
+                android:layout_marginTop="@dimen/text_margin"
+                android:layout_marginHorizontal="@dimen/text_margin"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_size"
+                android:fontFamily="@string/light">
+
+            </TextView>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:src="@drawable/mnnit_googlemap"
+                android:id="@+id/mnnitgooglemap"
+                android:layout_marginTop="36dp">
+
+
+
+            </ImageView>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedbackactivity"
+
+
+    android:orientation="vertical"
+    >
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:padding="8dp">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/feedbackImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+
+
+        android:layout_marginTop="36dp"
+        android:src="@drawable/avatar_profile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We thank you in advance for providing your honest and valuable feedback..."
+        android:layout_marginTop="36dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/title_size"
+        android:fontFamily="@string/bold">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/feedbackUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/feedbackEmailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Enter your email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/feedbackRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:hint="Please rate us on the scale of 5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/feedbackDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Drop your feedback here" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:weightSum="2"
+         android:layout_marginVertical="36dp"
+         >
+
+         <com.google.android.material.button.MaterialButton
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="Back"
+             android:textAllCaps="false"
+             android:layout_margin="8dp"
+             android:id="@+id/feedbackBack">
+
+         </com.google.android.material.button.MaterialButton>
+
+         <com.google.android.material.button.MaterialButton
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:layout_margin="8dp"
+             android:text="Submit"
+             android:textAllCaps="false"
+             android:id="@+id/feedbackSubmit">
+
+         </com.google.android.material.button.MaterialButton>on>
+     </LinearLayout>
+
+ </LinearLayout>
+
+</ScrollView>

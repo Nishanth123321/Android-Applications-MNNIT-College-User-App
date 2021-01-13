@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/noticeimage"
+                android:src="@drawable/avatar_profile"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MNNIT_User App"
+
+                    android:textSize="18dp"
+
+                    android:textColor="@color/textColor"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date : "
+                        android:fontFamily="@string/light"
+                        android:textSize="@dimen/text_size01"
+                        android:textColor="@color/textColor">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09/01/2021"
+                        android:id="@+id/date"
+                        android:fontFamily="@string/light"
+                        android:textSize="@dimen/text_size01"
+                        android:textColor="@color/textColor">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/text_margin"
+                        android:text="Time : "
+                        android:fontFamily="@string/light"
+                        android:textSize="@dimen/text_size01"
+                        android:textColor="@color/textColor">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:50 am"
+                        android:id="@+id/time"
+                        android:fontFamily="@string/light"
+                        android:textSize="@dimen/text_size01"
+                        android:textColor="@color/textColor">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subscribe my channel "
+            android:layout_marginVertical="@dimen/text_margin"
+            android:id="@+id/noticetitle"
+            android:textSize="17sp"
+            android:textColor="@color/textColor">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:id="@+id/noticeimagepreview">
+
+
+        </ImageView>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
